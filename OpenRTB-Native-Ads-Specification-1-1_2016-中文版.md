@@ -26,19 +26,7 @@ Creative Commons Attribution 3.0 License
 修改日志
 前言
 简介
-  综述
-  项目历史
-  资源
-  史版本
-###目录（感觉github的Markdown生成目录不是很好用， 就先不加链接了）
-http://www.iab.com/organizations/iab-tech-lab/
-修改日志
-前言
-简介
-
-Native Ads Specification原始文档可以在www.iab.com(三字母的好域名呀）找到。 
-
-IAB 联系方式:
-  Melissa Gallo
-  Director of Product, Programmatic Automation and Data IAB Technology Laboratory
-  melissa@iab.com
+  综述( 为什么不换行呢）
+  项目历史( 为什么不换行呢）
+  资源( 为什么不换行呢）
+  历史版本 ( 为什么不换行呢）
