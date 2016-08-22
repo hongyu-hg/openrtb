@@ -15,8 +15,11 @@ http://www.iab.com/organizations/iab-tech-lab/
 Native Ads Specification原始文档可以在www.iab.com(三字母的好域名呀）找到。 
 
 IAB 联系方式:
+
   Melissa Gallo
+
   Director of Product, Programmatic Automation and Data IAB Technology Laboratory
+
   melissa@iab.com
 ##开源协议
 Creative Commons Attribution 3.0 License
