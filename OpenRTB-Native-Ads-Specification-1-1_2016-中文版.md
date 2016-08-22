@@ -32,6 +32,9 @@ Creative Commons Attribution 3.0 License
   史版本
 ###目录（感觉github的Markdown生成目录不是很好用， 就先不加链接了）
 http://www.iab.com/organizations/iab-tech-lab/
+修改日志
+前言
+简介
 
 Native Ads Specification原始文档可以在www.iab.com(三字母的好域名呀）找到。 
 
