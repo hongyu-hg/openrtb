@@ -22,7 +22,7 @@ IAB 联系方式:
 Creative Commons Attribution 3.0 License
 
 
-##目录（感觉github的Markdown生成目录不是很好用， 就先不加链接了）
+###目录（感觉github的Markdown生成目录不是很好用， 就先不加链接了）
 
 修改日志
 前言
@@ -31,3 +31,12 @@ Creative Commons Attribution 3.0 License
   项目历史
   资源
   史版本
+###实验室的更多细节去官网查看
+http://www.iab.com/organizations/iab-tech-lab/
+
+Native Ads Specification原始文档可以在www.iab.com(三字母的好域名呀）找到。 
+
+IAB 联系方式:
+  Melissa Gallo
+  Director of Product, Programmatic Automation and Data IAB Technology Laboratory
+  melissa@iab.com
