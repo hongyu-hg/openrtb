@@ -47,6 +47,62 @@ Creative Commons Attribution 3.0 License
   2.3 数据格式
 
   2.4 版本标识
+
+3. bid request 细节
+
+  3.1 Native Object 层级关系 
+  
+4. Native Ad 标记细节
+
+  4.1 Native Markup Request 对象
+  
+  4.2 Assert 对象
+  
+  4.3 Title 对象
+  
+  4.4 Img 对象
+  
+  4.5 Video 对象
+  
+  4.6 Data 对象
+  
+5. Native Ad Bid 响应标记
+
+  5.1 Native Ad 创意Json。 
+  
+  5.2 Native 对象
+  
+  5.3 Asset 对象
+  
+  5.4 Title 对象
+  
+  5.5 Image 对象
+  
+6. Bid Request/response 示例
+
+    6.1 苹果墙示例
+        
+        6.1.1 Bid Request
+        
+        6.1.2 Bid Response
+    
+    6.2 聊天列表示例
+    
+        6.2.1 Bid Request
+        
+        6.2.2 Bid Response
+    
+    6.3 信息流和视频元素示例
+    
+        6.3.1 Bid Request
+        
+        6.3.2 Bid Response
+
+    6.4 Google 文本广告
+    
+        6.3.1 Bid Request
+        
+        6.3.2 Bid Response
 ## Native Ad 返回数据
 
 Native 的广告返回格式和内容和标准的openrtb 一致， 区别在于ad creative 是怎样返回的。 native creative 应该返回一个编码过的json字符串在Bid Object的adm字段。注意： 有些实现选择直接用Object而不是用json字符串。
