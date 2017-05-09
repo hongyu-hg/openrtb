@@ -103,8 +103,32 @@ Creative Commons Attribution 3.0 License
         6.3.1 Bid Request
         
         6.3.2 Bid Response
+        
+7. 参考列表
+
+    7.1 Native Layout IDs
+    
+    7.2 Native Ad Unit IDs
+    
+    7.3 Data Asset Types
+    
+    7.4 Image Asset Types
+    
+8. 应用笔记
+
+    8.1 Multi placement Bid Requests
+
+
+# 3 Bid 请求
+RTB 对话始于exchange或者其他兼容的服务发起一个bid请求到一个出价方。bid请求包含一个bid request对象。 
+
+
+
+
 ## Native Ad 返回数据
 
 Native 的广告返回格式和内容和标准的openrtb 一致， 区别在于ad creative 是怎样返回的。 native creative 应该返回一个编码过的json字符串在Bid Object的adm字段。注意： 有些实现选择直接用Object而不是用json字符串。
 
 ### 5.1 Native 返回数据
+
+
