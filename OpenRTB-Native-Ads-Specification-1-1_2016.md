@@ -1,165 +1,67 @@
-**RTB Project**
-
-OpenRTB Dynamic Native Ads API Specification Version 1.1
-
-March 2016
-
-***Introduction***
-
-*The Native Ads sub-committee of the IAB OpenRTB Project assembled in
-May 2014 to develop a new supplementary API specification for
-companies interested in an open protocol for the automated trading of
-Native Ads enabled media across a broader range of platforms, devices,
-and advertising solutions. This document is the culmination of those
-efforts.*
-
-***ABOUT THE IAB’S TECHNOLOGY LAB***
-
-*The IAB Technology Laboratory is a nonprofit research and development
-consortium charged with producing and helping companies implement
-global industry technical standards and solutions. The goal of the
-Tech Lab is to reduce friction associated with the digital advertising
-and marketing supply chain while contributing to the safe growth of an
-industry.*
-
-*The IAB Tech Lab spearheads the development of technical standards,
-creates and maintains a code library to assist in rapid,
-cost-effective implementation of IAB standards, and establishes a test
-platform for companies to evaluate the compatibility of their
-technology solutions with IAB standards, which for 18 years have been
-the foundation for interoperability and profitable growth in the
-digital advertising supply chain.*
-
-***Further details about the IAB Technology Lab can be found at:***
-*[**http://www.iab.com/organizations/iab-tech-lab/**](http://www.iab.com/organizations/iab-tech-lab/).
-The OpenRTB Work Group is a working group within the IAB Technology
-Lab.*
-
-*This document can be found at [www.iab.com](http://www.iab.com)*
-
-*IAB Contact Information:*
-
-*Melissa Gallo*
-
-*Director of Product, Programmatic Automation and Data*
-
-*IAB Technology Laboratory*
-[*melissa@iab.com*](mailto:melissa@iab.com)
-
-***License***
-
-*OpenRTB Specification by [*OpenRTB is*](http://openrtb.info/)
-licensed under a [*Creative Commons Attribution
-3.0*](http://creativecommons.org/licenses/by/3.0/)*
-
-**[License,](http://creativecommons.org/licenses/by/3.0/) based on a
-work at [openrtb.info. P](http://openrtb.info/)ermissions beyond the
-scope of this license may be available at
-[http://openrtb.info.](http://openrtb.info/) To view a copy of this
-license, visit [http://creativecommons.org/licenses/by/3.0/
-or](http://creativecommons.org/licenses/by/3.0/) write to Creative
-Commons, 171 Second Street, Suite 300, San Francisco, CA 94105, USA.**
-
-Table of Contents
-
-**Change Log**
-
-**Before You Get Started**
-
-**1 Introduction**
-
-**1.1 Mission / Overview**
-
-**1.2 Credits / Project History**
-
-**1.3 Resources**
-
-**1.4 Version History**
-
-**2 Native Ads Basics**
-
-**2.1 IAB Core Six**
-
-**2.2 Deep Dive on In-Feed Ad Units**
-
-**2.3 Data Format**
-
-**2.4 Versioning**
-
-**2.5 Customization and Extensions**
-
-**3 Bid Request Details**
-
-**3.1 Native Object Hierarchy**
-
-**4 Native Ad Request Markup Details**
-
-**4.1 Native Markup Request Object**
-
-**4.2 Asset Object**
-
-**4.3 Title Object**
-
-**4.4 Image Object**
-
-**4.5 Video Object**
-
-**4.6 Data Object**
-
-**5 Native Ad Response Markup Details**
-
-**5.1 Native Markup Response Object**
-
-**5.2 Asset Object**
-
-**5.3 Title Object**
-
-**5.4 Image Object**
-
-**5.5 Data Object**
-
-**5.6 Video Object**
-
-**5.7 Link Object**
-
-**6 Bid Request/Response Samples**
-
-**6.1 Social Context, Clickout Response**
-
-**Bid Request**
-
-**Bid Response**
-
-**6.2 Content Context, Video Response**
-
-**Bid Request**
-
-**Bid Response**
-
-**7 Reference Lists/Enumerations**
-
-**7.1 Native Layout IDs - To Be Deprecated**
-
-**7.2 Native Ad Unit IDs - To Be Deprecated**
-
-**7.3 Context Type IDs**
-
-**7.4 Context Sub Type IDs**
-
-**7.5 Placement Type IDs**
-
-**7.6 Data Asset Types**
-
-**7.7 Image Asset Types**
-
-**8 Implementation Notes**
-
-**8.1 Multi Placement Bid Requests**
-
-**Change Log**
+OpenRTB Native 动态广告API规范 版本1.1
+==========
+##简介
+
+Native Ad 2014 年5月启动，隶属了IAB OpenRTB项目， 致力于开发一个开放的广告解决方案。
+
+索引
+更新日志
+前言
+
+1 简介
+1.1 概述
+1.2 项目历史
+1.3 资源
+1.4 版本历史
+2 Native 概述
+2.1 IAB 的六个核心
+2.2 深入介绍In-Feed广告单元
+2.3 数据格式
+2.4 版本
+2.5 自定义和扩展
+3 Bid Request详解
+3.1 Native 对象层级关系
+4 Native Ad Request Markup 详解
+4.1 Native Markup Request 对象
+4.2 Asset 对象
+4.3 Title 对象
+4.4 Image 对象
+4.5 Video 对象
+4.6 Data 对象
+5 Native Ad Response Markup 详解
+5.1 Native Markup Response 对象
+5.2 Asset 对象
+5.3 Title 对象
+5.4 Image 对象
+5.5 Data 对象
+5.6 Video 对象
+5.7 Link 对象
+6 Bid Request/Response 实例
+6.1 Content Context, Clickout Response
+Bid Request
+Bid Response
+6.2 Content Context, Video Response
+Bid Request
+Bid Response
+7 参考列表/Enumerations
+7.1 Native Layout IDs - 将要废弃
+7.2 Native Ad Unit IDs - 将要废弃
+7.3 内容分类列表
+7.4 内容分类子列表
+7.5 Placement 分类 IDs
+
+7.6 Data Asset Types
+
+7.7 Image Asset Types
+
+8 Implementation Notes
+
+8.1 Multi Placement Bid Requests
+
+Change Log
 
 -----------------------------------------------------------------------------------------------------------------------------
-> **Version Date Section Link Change**
+> **Version Date Section Link Change
 -----------------------------------------------------------------------------------------------------------------------------
 > 1.0 Jan 2015 Original Version
 
@@ -203,7 +105,7 @@ ve](http://www.iab.net/media/file/IAB_Deep_Dive_on_InFeed_Ad_Units.pdf)
 ded note regarding direct-object representation in addition to
 coded-string representation of native requests and responses.
 
-**Before You Get Started**
+Before You Get Started
 
 This specification contains a detailed explanation of a sub-protocol
 of the OpenRTB real-time bidding interface. Not all objects are
@@ -213,7 +115,7 @@ which fields are essential to support a minimum viable real time
 bidding interface for various scenarios.
 
 A minimal viable interface should include the **required** and
-**recommended** parameters, but the scope for these parameters may be
+recommended** parameters, but the scope for these parameters may be
 limited to specific scenarios. In these cases, the scope will be
 qualified with the applicable scenarios (e.g., **required for native
 impressions** and **recommended for native impressions**). Conversely,
@@ -222,16 +124,16 @@ if the scope is not qualified, it applies to all scenarios.
 Optional parameters may be included to ensure maximum value is derived
 by the parties.
 
-**IMPORTANT:** Since **recommended** parameters are not required, they
+IMPORTANT:** Since **recommended** parameters are not required, they
 may not be available from all supply sources. It is suggested that all
 parties to OpenRTB transaction complete the integration checklist
 (please refer to OpenRTB) to identify which parameters the supply side
 supports in the bid request, and which parameters the demand side
 requires for ad decisioning.
 
-**1 Introduction**
+1 Introduction
 
-**1.1 Mission / Overview**
+1.1 Mission / Overview
 
 The mission of the OpenRTB Native project is to spur standardization
 and greater growth in the Real-Time Bidding (RTB) marketplace for
@@ -248,7 +150,7 @@ version 1.0 was published in early 2015. Version 1.1 is designed to
 fix errors, make clarifications, and promote further adoption through
 refined standardization of assets and classification fields.
 
-**1.2 Credits / Project History**
+1.2 Credits / Project History
 
 This document has been developed by the IAB Technology Lab’s OpenRTB
 Native Subgroup. The OpenRTB Working Group mission and participation
@@ -280,9 +182,9 @@ Curt Larson, Sharethrough
 
 Kuldeep Kapade, AdsNative
 
-**1.3 Resources**
+1.3 Resources
 
-**Resource Location**
+Resource Location
 
 OpenRTB Website [http://openrtb.info](http://openrtb.info/)
 
@@ -316,7 +218,7 @@ Guide to Native 1.1 [http://nativeadvertising.com/openrtb-2-4-and-
 native-1-1-the-new-iab-standards-that-are-allowing-
 native-ads-to-scale/](http://nativeadvertising.com/openrtb-2-4-and-native-1-1-the-new-iab-standards-that-are-allowing-native-ads-to-scale/)
 
-**1.4 Version History**
+1.4 Version History
 
 Version 0.99.10.24 PUBLIC COMMENT DRAFT October 24, 2014
 
@@ -330,7 +232,7 @@ Version 1.0.0.2 FINAL DRAFT January 23, 2015
 
 Version 1.1 FINAL DRAFT March 22, 2015
 
-**2 Native Ads Basics**
+2 Native Ads Basics
 
 Native advertising is an online advertising method in which the
 advertiser attempts to gain attention by providing content in the
@@ -340,9 +242,9 @@ is in contrast to traditional banner or interstitials ads, which are
 displayed in a separate space of predefined and universal size,
 without regard to their surroundings.
 
-**2.1 IAB Core Six**
+2.1 IAB Core Six
 
-The [*IAB Native Advertising Playbook*
+The [*IAB Native Advertising Playbook
 lists](http://www.iab.net/media/file/IAB-Native-Advertising-Playbook2.pdf)
 six types of native ad units:
 
@@ -358,10 +260,10 @@ six types of native ad units:
 
 ● Custom / “Can’t be contained”
 
-**2.2 Deep Dive on In-Feed Ad Units**
+2.2 Deep Dive on In-Feed Ad Units
 
 To help further define and clarify the types and categories of native
-advertising, the IAB published a [*Deep Dive on In-Feed Ad Units*
+advertising, the IAB published a [*Deep Dive on In-Feed Ad Units
 in](http://www.iab.net/media/file/IAB_Deep_Dive_on_InFeed_Ad_Units.pdf)
 July 2015. Version 1.1 of the Native spec uses these concepts to
 refine the definitions of ad types, detailed below as Context and
@@ -369,97 +271,97 @@ PlacementType, which will ultimately replace the previous LayoutID and
 AdUnitID, which were defined in Native 1.0 and based on the original
 Native Advertising Playbook referenced above.
 
-Where found**
+Where found
 
-**Most common ad types/content objects**
+Most common ad types/content objects
 
-**Most common types of links**
+Most common types of links
 
-**Representative feed view**
+Representative feed view
 
-**2.3 Data Format**
+2.3 Data Format
 
 As this specification outlines an optional sub-protocol of the main
 OpenRTB protocol payload, the format must follow that of its parent.
 Please refer to the main OpenRTB specification for details of various
 formats that may be used
 
-**2.4 Versioning**
+2.4 Versioning
 
 The Native Object in the Bid Request (OpenRTB contains a “ver” field
 defining the version of the
 
-OpenRTB native extension*.*
+OpenRTB native extension*.
 
-***2.5 Customization and Extensions***
+2.5 Customization and Extensions
 
 The OpenRTB Native Ads spec allows for exchange specific customization
 and extensions of the specification. Any object may contain
 extensions. In order to keep extension fields consistent across
 platforms, they should consistently be named “ext”.
 
-**3 Bid Request Details**
+3 Bid Request Details
 
 RTB transactions are initiated when an exchange or other supply source
 sends a bid request to a bidder. The bid request consists of a bid
 request object, at least one impression object, and may optionally
 include additional objects providing impression context.
 
-**3.1 Native Object Hierarchy**
+3.1 Native Object Hierarchy
 
 Following is the object hierarchy for a bid request. The new Native
 Object is another optional element of the impression object, and can
 be specified as an alternative to or in conjunction with a banner
 object or video object.
 
-**Bid Request Object**
+Bid Request Object
 
-**Banner**
+Banner
 
-**Object**
+Object
 
-**Native**
+Native
 
- **Object**
+ **Object
 
-**Request**
+Request
 
-**Video Object**
+Video Object
 
 
-
-(other OpenRTB objects)
 
 (other OpenRTB objects)
 
-**4 Native Ad Request Markup Details**
+(other OpenRTB objects)
 
-**4.1 Native Markup Request Object**
+4 Native Ad Request Markup Details
+
+4.1 Native Markup Request Object
 
 The Native Object defines the native advertising opportunity available
 for bid via this bid request. It will be included as a JSON-encoded
 string in the bid request’s imp.native field or as a direct JSON
 object, depending on the choice of the exchange. *While OpenRTB
 2.3/2.4 supports only JSON-encoded strings, many exchanges have
-implemented a formal object. Check with your integration docs.*
+implemented a formal object. Check with your integration docs.
 
 The **Default** column dictates how optional parameters should be
 interpreted if explicit values are not provided.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
-> **Field Scope Type Default Description**
+> **Field Scope Type Default Description
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 > ver optional string 1.1 Version of the Native Markup version in use.
 
 > layout **recommended** integer - The Layout ID of the native ad
 >
-> **in 1.0, to be** unit. See the *Table of Layout IDs*
+> **in 1.0, to be** unit. See the *Table of Layout IDs
 >
 > **deprecated** below.
 
 > adunit **recommended** integer - The Ad unit ID of the native ad
 >
-> **in 1.0, to be** unit. See *Table of Ad Unit IDs*
+> **in 1.0, to be** unit. See *Table of Ad Unit IDs
 >
 > **deprecated** below for a list of supported core ad units.
 
@@ -473,7 +375,7 @@ interpreted if explicit values are not provided.
 
 > plcmttype **recommended** integer - The design/format/layout of the
 >
-> ad unit being offered. See *Table*
+> ad unit being offered. See *Table
 >
 > of Placement Type IDs below for a list of supported placement types.
 
@@ -510,12 +412,12 @@ interpreted if explicit values are not provided.
         > defined in this specification
 ----------------------------------------------------------------------------------------------
 
-**Note:** Prior to VERSION 1.1, the specification could be interpreted
+Note:** Prior to VERSION 1.1, the specification could be interpreted
 as requiring the native request to have a root node with a single
 field “native” that would contain the object above as its value. The
 Native Markup Request Object specified above is now the root object.
 
-**4.2 Asset Object**
+4.2 Asset Object
 
 The main container object for each asset requested or supported by
 Exchange on behalf of the rendering client. Any object that is
@@ -549,7 +451,7 @@ confident that if they support these standards they'll be able to
 access most native inventory.
 
 ---------------------------------------------------------------------------------------------------
-> **Field Scope Type Default Description**
+> **Field Scope Type Default Description
 ---------------------------------------------------------------------------------------------------
 > id **required** int - Unique asset ID, assigned by exchange. Typically a counter for the array.
 
@@ -562,7 +464,7 @@ access most native inventory.
 > 1 TitleObject definition.
 ---------------------------------------------------------------------------------------------------
 
-img **recommended**
+img **recommended
 
 1
 
@@ -578,7 +480,7 @@ a video as the ad
 
 creative itself.
 
-data **recommended**
+data **recommended
 
 1
 
@@ -592,16 +494,16 @@ standard defined in this specification
 1: each asset object may contain only one of title, img, data or
 video.
 
-**4.3 Title Object**
+4.3 Title Object
 
 The Title object is to be used for title element of the Native ad.
 
-> **Field**   > **Scope**                        > **Type**   > **Default**   > **Description**
+> **Field**   > **Scope**                        > **Type**   > **Default**   > **Description
 ------------- ---------------------------------- ------------ --------------- -------------------------------------
 > len         > **required**                     > integer    > -             > Maximum length of the text in
                                                                               > the title element.
-                                                                              > **Recommended to be 25, 90, or**
-                                                                              > **140.**
+                                                                              > **Recommended to be 25, 90, or
+                                                                              > **140.
 > ext         > optional                         > object     > -             > This object is a placeholder that
               > may contain custom JSON
               > agreed to by the parties to
@@ -609,13 +511,13 @@ The Title object is to be used for title element of the Native ad.
               > standard defined in this
               > specification
 
-**4.4 Image Object**
+4.4 Image Object
 
 The Image object to be used for all image elements of the Native ad
 such as Icons, Main Image, etc. **Recommended sizes and aspect ratios
-are included in the *Image Asset Types* section.**
+are included in the *Image Asset Types* section.
 
-**Field Scope Type Default Description**
+Field Scope Type Default Description
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 > type    > optional          > integer    > -         > Type ID of the image element
@@ -657,7 +559,7 @@ are included in the *Image Asset Types* section.**
 
 standard defined in this specification
 
-***4.5 Video Object***
+4.5 Video Object
 
 The video object to be used for all video elements supported in the
 Native Ad. This corresponds to the Video object of OpenRTB. Exchange
@@ -666,7 +568,7 @@ required attributes of the Video Object. For optional attributes
 please refer to OpenRTB.
 
 -----------------------------------------------------------------------------------------------------------------------------
-> **Field Scope Type Default Description**
+> **Field Scope Type Default Description
 -----------------------------------------------------------------------------------------------------------------------------
 > mimes **required** array Content MIME types supported.
 >
@@ -699,7 +601,7 @@ please refer to OpenRTB.
 > may contain custom JSON agreed to by the parties to support flexibility beyond the standard defined in this specification
 -----------------------------------------------------------------------------------------------------------------------------
 
-**4.6 Data Object**
+4.6 Data Object
 
 The Data Object is to be used for all non-core elements of the native
 unit such as Brand Name, Ratings, Review Count, Stars, Download count,
@@ -710,7 +612,7 @@ document. In some cases, additional recommendations are also included
 in the *Data Asset Types* table.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-> **Field Scope Type Default Description**
+> **Field Scope Type Default Description
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 > type **required** integer - Type ID of the element supported by the publisher. The publisher can display this information in an appropriate format. See *Data Asset Types* table for commonly used examples.
 
@@ -723,7 +625,7 @@ in the *Data Asset Types* table.
 > may contain custom JSON agreed to by the parties to support flexibility beyond the standard defined in this specification
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**5 Native Ad Response Markup Details**
+5 Native Ad Response Markup Details
 
 The structure and contents of the Bid Response are the same as in the
 OpenRTB standard. The difference is in how the ad creative is
@@ -732,13 +634,13 @@ string in the adm field of the Bid Object. Note some implementers have
 chosen to use a direct object in a new field rather than JSON encoded
 string.
 
-**5.1 Native Markup Response Object**
+5.1 Native Markup Response Object
 
 The native object is the top level JSON object which identifies a
 native response. The native object has following attributes:
 
 ------------------------------------------------------------------------------
-> **Field Scope Type Default Description**
+> **Field Scope Type Default Description
 ------------------------------------------------------------------------------
 > ver **optional** string “1.1” Version of the Native Markup version in use.
 
@@ -773,12 +675,12 @@ ext optional object - This object is a placeholder that may contain
 custom JSON agreed to by the parties to support flexibility beyond the
 standard defined in this specification
 
-**Note:** Prior to VERSION 1.1, the native response’s root node was an
+Note:** Prior to VERSION 1.1, the native response’s root node was an
 object with a single field “native” that would contain the object
 above as its value. The Native Object specified above is now the root
 object.
 
-**5.2 Asset Object**
+5.2 Asset Object
 
 Corresponds to the Asset Object in the request. The main container
 object for each asset requested or supported by Exchange on behalf of
@@ -789,7 +691,7 @@ unique within the AssetObject array so that the response can be
 aligned.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
-> **Field**   > **Scope**      > **Type**   > **Default**   > **Description**
+> **Field**   > **Scope**      > **Type**   > **Default**   > **Description
 ------------- ---------------- ------------ --------------- --------------------------------------------------------------------------------------
 > id          > **required**   > int        > -             > Unique asset ID, assigned by exchange, must match one of the asset IDs in request.
 
@@ -853,13 +755,13 @@ aligned.
 2: Bidders are encouraged not to use asset.ext for exchanging text
 assets. Use data.ext with custom type instead.
 
-**5.3 Title Object**
+5.3 Title Object
 
 Corresponds to the Title Object in the request, with the value filled
 in.
 
 --------------------------------------------------------------------------------------------------------------------------
-> **Field**   > **Scope**      > **Type**   > **Default**   > **Description**
+> **Field**   > **Scope**      > **Type**   > **Default**   > **Description
 ------------- ---------------- ------------ --------------- --------------------------------------------------------------
 > text        > **required**   > String     > -             > The text associated with the text element.
 
@@ -872,14 +774,14 @@ in.
 
 standard defined in this specification
 
-**5.4 Image Object**
+5.4 Image Object
 
 Corresponds to the Image Object in the request. The Image object to be
 used for all image elements of the Native ad such as Icons, Main
 Image, etc.
 
 -----------------------------------------------------------------------------------------------------------------------------
-> **Field Scope Type Default Description**
+> **Field Scope Type Default Description
 -----------------------------------------------------------------------------------------------------------------------------
 > url **required** string - URL of the image asset.
 
@@ -892,7 +794,7 @@ Image, etc.
 > may contain custom JSON agreed to by the parties to support flexibility beyond the standard defined in this specification
 -----------------------------------------------------------------------------------------------------------------------------
 
-**5.5 Data Object**
+5.5 Data Object
 
 Corresponds to the Data Object in the request, with the value filled
 in. The Data Object is to be used for all miscellaneous elements of
@@ -901,7 +803,7 @@ Downloads, Price count etc. It is also generic for future native
 elements not contemplated at the time of the writing of this document.
 
 -----------------------------------------------------------------------------------------------------------------------------
-> **Field Scope Type Default Description**
+> **Field Scope Type Default Description
 -----------------------------------------------------------------------------------------------------------------------------
 > label optional string - The optional formatted string name of the data type to be displayed.
 
@@ -918,18 +820,18 @@ elements not contemplated at the time of the writing of this document.
 > may contain custom JSON agreed to by the parties to support flexibility beyond the standard defined in this specification
 -----------------------------------------------------------------------------------------------------------------------------
 
-***5.6 Video Object***
+5.6 Video Object
 
 Corresponds to the Video Object in the request, yet containing a value
 of a conforming VAST
 
 tag as a value.
 
-> **Field**   > **Scope**      > **Type**   > **Default**   > **Description**
+> **Field**   > **Scope**      > **Type**   > **Default**   > **Description
 ------------- ---------------- ------------ --------------- -------------------
 > vasttag     > **required**   > string     > -             > vast xml.
 
-**5.7 Link Object**
+5.7 Link Object
 
 Used for ‘call to action’ assets, or other links from the Native ad.
 This Object should be associated to its peer object in the parent
@@ -938,7 +840,7 @@ object. When that peer object is activated (clicked) the action should
 take the user to the location of the link.
 
 -----------------------------------------------------------------------------------------------------------------------------
-> **Field Scope Type Default Description**
+> **Field Scope Type Default Description
 -----------------------------------------------------------------------------------------------------------------------------
 > url **required** string - Landing URL of the clickable link.
 
@@ -955,19 +857,19 @@ take the user to the location of the link.
 > may contain custom JSON agreed to by the parties to support flexibility beyond the standard defined in this specification
 -----------------------------------------------------------------------------------------------------------------------------
 
-**6 Bid Request/Response Samples**
+6 Bid Request/Response Samples
 
-***Note: for purposes of readability, these examples are written as
+Note: for purposes of readability, these examples are written as
 JSON objects directly, even though they may or may not be
 string-encoded in the actual message. Also note that only the native
 portion of the request/response is illustrated. For full examples,
-please see the OpenRTB 2.4 parent document.***
+please see the OpenRTB 2.4 parent document.
 
-***6.1 Social Context, Clickout Response***
+6.1 Social Context, Clickout Response
 
 The ad might look like -
 
-***Bid Request***
+Bid Request
 
 "native":{ "ver":”1.1”, "context":2, "contextsubtype":20,
 "plcmttype":11, "plcmtcnt":1, "assets":\[
@@ -1034,7 +936,7 @@ The ad might look like -
 
 }
 
-***Bid Response***
+Bid Response
 
 "native": { "link": {
 
@@ -1098,11 +1000,11 @@ alue": "Learn all about this awesome story of someone using
 
 
 
-***6.2 Content Context, Video Response***
+6.2 Content Context, Video Response
 
 The ad might look like -
 
-***Bid Request***
+Bid Request
 
 "native":{ "ver":”1.1”, "context":1, "contextsubtype":10,
 "plcmttype":11, "plcmtcnt":1, "assets":\[
@@ -1189,7 +1091,7 @@ The ad might look like -
 
 }
 
-***Bid Response***
+Bid Response
 
 "native": { "link": {
 
@@ -1263,9 +1165,9 @@ d": 127, "required": 1, "data": {
 
 }
 
-**7 Reference Lists/Enumerations**
+7 Reference Lists/Enumerations
 
-**7.1 Native Layout IDs - To Be Deprecated**
+7.1 Native Layout IDs - To Be Deprecated
 
 Layout ID is to be deprecated in a future version and is not suggested
 for new implementations.
@@ -1277,7 +1179,7 @@ An implementing exchange may not support all asset variants or
 introduce new ones unique to that system.
 
 ------------------------------------------------
-> **Layout ID Description**
+> **Layout ID Description
 ------------------------------------------------
 > 1 Content Wall
 
@@ -1296,7 +1198,7 @@ introduce new ones unique to that system.
 > 500+ Reserved for Exchange specific layouts.
 ------------------------------------------------
 
-**7.2 Native Ad Unit IDs - To Be Deprecated**
+7.2 Native Ad Unit IDs - To Be Deprecated
 
 Ad Unit ID is to be deprecated in a future version and is not
 suggested for new implementations.
@@ -1312,7 +1214,7 @@ An implementing exchange may not support all asset variants or
 introduce new ones unique to that system.
 
 ----------------------------------------------------
-> **Ad Unit ID Description**
+> **Ad Unit ID Description
 ----------------------------------------------------
 > 1 Paid Search Units
 
@@ -1327,7 +1229,7 @@ introduce new ones unique to that system.
 > 500+ Reserved for Exchange specific formats.
 ----------------------------------------------------
 
-**7.3 Context Type IDs**
+7.3 Context Type IDs
 
 The context in which the ad appears - what type of content is
 surrounding the ad on the page at a high level. This maps directly to
@@ -1338,7 +1240,7 @@ not exist on the page - for example it's expected that most content
 platforms have some social components, etc.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-> **Context Type ID Description**
+> **Context Type ID Description
 ----------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------
                                     
 
@@ -1357,7 +1259,7 @@ platforms have some social components, etc.
 > 500+                              
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**7.4 Context Sub Type IDs**
+7.4 Context Sub Type IDs
 
 Next-level context in which the ad appears. Again this reflects the
 primary context, and does not imply no presence of other elements. For
@@ -1366,7 +1268,7 @@ foremost an article. SubType should only be combined with the primary
 context type as indicated (ie for a context type of 1, only context
 subtypes that start with 1 are valid).
 
-**Context SubType ID Description**
+Context SubType ID Description
 
 10 General or mixed content.
 
@@ -1396,12 +1298,12 @@ Primarily article content (which of course could include images, etc
 
 500+ To be defined by the exchange
 
-**7.5 Placement Type IDs**
+7.5 Placement Type IDs
 
 The FORMAT of the ad you are purchasing, separate from the surrounding
 context
 
-**Placement Type ID Description**
+Placement Type ID Description
 
 In the feed of content - for example as an item inside the organic
 
@@ -1422,7 +1324,7 @@ Recommendation widget, most commonly presented below the article
 
 500+ To be defined by the exchange
 
-**7.6 Data Asset Types**
+7.6 Data Asset Types
 
 Below is a list of common asset element types of native advertising at
 the time of writing this spec. This list is non-exhaustive and
@@ -1433,7 +1335,7 @@ An implementing exchange may not support all asset variants or
 introduce new ones unique to that system.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-> **Type**   > **Name**    > **Description**                                                                                               > **Format**                   > **Recommendations**
+> **Type**   > **Name**    > **Description**                                                                                               > **Format**                   > **Recommendations
 >                                                                                                                                                                         
 > **ID**                                                                                                                                                                  
 ------------ ------------- --------------------------------------------------------------------------------------------------------------- ------------------------------ ----------------------------------------------
@@ -1462,7 +1364,7 @@ introduce new ones unique to that system.
 > 12     > ctatext      > CTA description - descriptive text describing a ‘call to action’ button for the destination URL.                                                                        > text                         > Optional. Max 15 or longer.
 > 500+   > XXX          > Reserved for Exchange specific usage numbered above 500                                                                                                                 > Unknown                      
 
-**7.7 Image Asset Types**
+7.7 Image Asset Types
 
 Below is a list of common image asset element types of native
 advertising at the time of writing this spec. This list is
@@ -1487,17 +1389,17 @@ type 1 and type 2 as just type 1 - to be used for app icon, brand
 logo, or similar.
 
 -----------------------------------------------------------------------------------
-> **Type Name Description Recommendations**
+> **Type Name Description Recommendations
 >
-> **ID**
+> **ID
 -----------------------------------------------------------------------------------
 > 1 Icon Icon image Optional.
 >
 > max height: at least 50 aspect ratio: 1:1
 
-> 2 Logo Logo image for the **To be deprecated in future version**
+> 2 Logo Logo image for the **To be deprecated in future version
 >
-> brand/app. **- use type 1 Icon.**
+> brand/app. **- use type 1 Icon.
 
 > 3 Main Large image preview for the At least one of 2 size variants ad required:
 
@@ -1526,9 +1428,9 @@ aspect ratio: 1:1, 4:3, or
 > above 500
 -----------------------------------------------------------------------------------
 
-***8 Implementation Notes***
+8 Implementation Notes
 
-***8.1 Multi Placement Bid Requests***
+8.1 Multi Placement Bid Requests
 
 If the bid request has a placement count (“plcmtcnt”) greater than 1,
 then the implication is that the bidder is submitting bids to a
