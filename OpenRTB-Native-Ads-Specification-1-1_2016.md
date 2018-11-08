@@ -9,45 +9,85 @@ Native Ad 2014 年5月启动，隶属了IAB OpenRTB项目， 致力于开发一�
 前言
 
 1 简介
+
 1.1 概述
+
 1.2 项目历史
+
 1.3 资源
+
 1.4 版本历史
+
 2 Native 概述
+
 2.1 IAB 的六个核心
+
 2.2 深入介绍In-Feed广告单元
+
 2.3 数据格式
+
 2.4 版本
+
 2.5 自定义和扩展
+
 3 Bid Request详解
+
 3.1 Native 对象层级关系
+
 4 Native Ad Request Markup 详解
+
 4.1 Native Markup Request 对象
+
 4.2 Asset 对象
+
 4.3 Title 对象
+
 4.4 Image 对象
+
 4.5 Video 对象
+
 4.6 Data 对象
+
 5 Native Ad Response Markup 详解
+
 5.1 Native Markup Response 对象
+
 5.2 Asset 对象
+
 5.3 Title 对象
+
 5.4 Image 对象
+
 5.5 Data 对象
+
 5.6 Video 对象
+
 5.7 Link 对象
+
 6 Bid Request/Response 实例
+
 6.1 Content Context, Clickout Response
+
 Bid Request
+
 Bid Response
+
 6.2 Content Context, Video Response
+
 Bid Request
+
 Bid Response
+
 7 参考列表/Enumerations
+
 7.1 Native Layout IDs - 将要废弃
+
 7.2 Native Ad Unit IDs - 将要废弃
+
 7.3 内容分类列表
+
 7.4 内容分类子列表
+
 7.5 Placement 分类 IDs
 
 7.6 Data Asset Types
