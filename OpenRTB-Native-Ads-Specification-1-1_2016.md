@@ -100,18 +100,123 @@ Bid Response
 
 Change Log
 
------------------------------------------------------------------------------------------------------------------------------
-> **Version Date Section Link Change
------------------------------------------------------------------------------------------------------------------------------
-> 1.0 Jan 2015 Original Version
+| 版本 | 日期 | 修改章节 | 备注|
+|----------|----------|----------|----------|
+|1.0|2015年1月||第一版|
+|1.1|2015年10月|视频|增加了MIME类型的示例|
+|1.1|2015年10月||全文错误拼写纠正|
+|1.1|2015年10月|Native Request对像|进一步解释了如何使用seq参数|
+|1.1|2015年10月|Title对象||
 
-> 1.1 Oct 2015 Examples Correct ver field to a string in the examples
-
-> 1.1 Oct 2015 Video request Added supported mime types to video request
+> 1.1 Oct 2015 Native Request Further described how the ‘seq’ parameter is meant
 >
-> example example
+> Object to be used
 
-> 1.1 Oct 2015 Miscellaneous typos and corrections throughout
+> 1.1 Oct 2015 Title Object Creative element standardization - created
+>
+> Data Asset Types recommended supported fields, lengths, and sizes for the image, title, and data asset objects to promote
+>
+> Image Asset Types standardization
+-----------------------------------------------------------------------------------------------------------------------------
+
+1.1 Oct 2015 Native Ad Request
+
+Context IDs
+
+Context Subtype IDs
+
+Placement Type IDs
+
+1.1 Oct 2015 Bid Request
+
+Bid Response
+
+rk as ‘to be deprecated’ AdUnitID and LayoutID, and replace with new
+elds Context, Contextsubtype, and Placementtype to better reflect the
+pes of inventory being transacted natively and the new [*In-* Feed IAB
+ep
+ve](http://www.iab.net/media/file/IAB_Deep_Dive_on_InFeed_Ad_Units.pdf)
+
+ded note regarding direct-object representation in addition to
+coded-string representation of native requests and responses.
+
+Before You Get Started
+
+This specification contains a detailed explanation of a sub-protocol
+of the OpenRTB real-time bidding interface. Not all objects are
+required, and each object may contain a number of optional parameters.
+To assist a first time reader of the specification, we have indicated
+which fields are essential to support a minimum viable real time
+bidding interface for various scenarios.
+
+A minimal viable interface should include the **required** and
+recommended** parameters, but the scope for these parameters may be
+limited to specific scenarios. In these cases, the scope will be
+qualified with the applicable scenarios (e.g., **required for native
+impressions** and **recommended for native impressions**). Conversely,
+if the scope is not qualified, it applies to all scenarios.
+
+Optional parameters may be included to ensure maximum value is derived
+by the parties.
+
+IMPORTANT:** Since **recommended** parameters are not required, they
+may not be available from all supply sources. It is suggested that all
+parties to OpenRTB transaction complete the integration checklist
+(please refer to OpenRTB) to identify which parameters the supply side
+supports in the bid request, and which parameters the demand side
+requires for ad decisioning.
+
+1 Introduction
+
+1.1 Mission / Overview
+
+The mission of the OpenRTB Native project is to spur standardization
+and greater growth in the Real-Time Bidding (RTB) marketplace for
+Native Ads by providing open industry standards for communication
+between buyers of advertising and sellers of publisher inventory.
+
+This specification is a sub-protocol of OpenRTB to allow for the
+delivery of native advertising formats, as their specifics differ from
+publisher to publisher. In May 2013, a separate IAB subcommittee was
+formed to define the request and response structures of native ad
+units;
+
+version 1.0 was published in early 2015. Version 1.1 is designed to
+fix errors, make clarifications, and promote further adoption through
+refined standardization of assets and classification fields.
+
+1.2 Credits / Project History
+
+This document has been developed by the IAB Technology Lab’s OpenRTB
+Native Subgroup. The OpenRTB Working Group mission and participation
+list can be reviewed at:
+[*http://www.iab.com/guidelines/real-time-bidding-rtb-project/*](http://www.iab.com/guidelines/real-time-bidding-rtb-project/)
+
+Neal Richter & Avinash Shahdadpuri, Rubicon Project
+
+Jim Butler, Nexage
+
+Adam Morgenlender & Gabor Cselle, Twitter Narayanan Balakrishnan &
+Anand Narayanan, InMobi Giuseppe Di Mauro, PubMatic
+
+Ilya Kaplun, Visible Measures Jennifer Lum, Adelphic Wesley Biggs,
+Byyd
+
+Benoit Grouchko & Elisabeth Rotrou, Criteo
+
+David Hernandez, AOL
+
+Rajaraman Periasamy, RocketFuel
+
+Jin Yu, OpenX
+
+Anton Roslov, Phorm Andraž Tori, Zemanta Osvaldo Doederlein, Google
+Benu Shroff, Turn
+
+Curt Larson, Sharethrough
+
+Kuldeep Kapade, AdsNative
+
 
 > 1.1 Oct 2015 Native Request Further described how the ‘seq’ parameter is meant
 >
