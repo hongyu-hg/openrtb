@@ -105,7 +105,7 @@ Change Log
 |1.0|2015年1月||第一版|
 |1.1|2015年10月|视频|增加了MIME类型的示例|
 |1.1|2015年10月||全文错误拼写纠正|
-|1.1|2015年10月|Native Request对像|进一步解释了如何使用seq参数|
+|1.1|2015年10月|Native Request对像|详解seq参数|
 |1.1|2015年10月|Title对象||
 
 > 1.1 Oct 2015 Native Request Further described how the ‘seq’ parameter is meant
